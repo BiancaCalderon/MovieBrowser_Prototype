@@ -45,3 +45,7 @@ Luego accedemos anuestra carpeta /MovieApp y ejecutamos:
 
 - Mejorar la gestión de errores y estados de carga.
 
+  ## Ejecución
+  
+[Ejecucción en YouTube](https://youtu.be/qwO1t7CVsxY)
+
