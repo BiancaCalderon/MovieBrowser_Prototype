@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# MovieApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Prototipo de streaming de películas 👋
 
-## Get started
+Esta es un prototipo de streaming de películas desarrollada con React Native y Expo.
 
-1. Install dependencies
+## Configuración
+
+1. **Instalar dependencias**
+
+   Asegúrate de tener [Node.js](https://nodejs.org/) y [Expo CLI](https://docs.expo.dev/get-started/installation/) instalados. Luego, ejecuta:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Iniciar la aplicación**
+
+   Para iniciar la aplicación, ejecuta:
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   En la salida, encontrarás opciones para abrir la aplicación en un emulador de Android, simulador de iOS o en un navegador web.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Documentación de decisiones arquitectónicas
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Estructura de carpetas**: La aplicación está organizada en carpetas que separan componentes, servicios, tipos y constantes. Esto facilita la escalabilidad y el mantenimiento del código.
+- **Uso de TypeScript**: Se utiliza TypeScript para proporcionar tipado estático, lo que ayuda a prevenir errores y mejora la autocompletación en el IDE.
+- **Navegación**: Se implementa la navegación utilizando `expo-router`, lo que permite una navegación sencilla entre pantallas.
+- **Manejo de estado**: Se utiliza el hook `useState` para manejar el estado de las películas destacadas y las secciones de películas.
 
-## Get a fresh project
+## Características implementadas (Pantalla de inicio)
 
-When you're ready, run:
+1. **Película destacada**: Muestra una película destacada en la parte superior de la pantalla con su información relevante.
+2. **Secciones de películas**: Incluye secciones "You Might Like" y "My List" que permiten a los usuarios explorar diferentes películas.
+3. **Carga de datos**: Implementa un spinner de carga mientras se obtienen los datos de las películas.
+4. **Diseño responsivo**: La aplicación se adapta a diferentes tamaños de pantalla, asegurando una buena experiencia tanto en dispositivos móviles como en la web.
 
-```bash
-npm run reset-project
-```
+## Posibles mejoras
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Mejorar la gestión de errores y estados de carga.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
