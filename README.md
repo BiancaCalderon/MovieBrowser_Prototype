@@ -8,13 +8,16 @@ Esta es un prototipo de streaming de películas desarrollada con React Native y 
 
 1. **Instalar dependencias**
 
-   Asegúrate de tener [Node.js](https://nodejs.org/) y [Expo CLI](https://docs.expo.dev/get-started/installation/) instalados. Luego, ejecuta:
-
+   Asegúrate de tener [Node.js](https://nodejs.org/) y [Expo CLI](https://docs.expo.dev/get-started/installation/) instalados. Para la creación incial de la estructura se utiliza:
+   ```bash
+   npx create-expo-app MovieApp
+   ```
+Luego accedemos anuestra carpeta /MovieApp y ejecutamos:
    ```bash
    npm install
    ```
 
-2. **Iniciar la aplicación**
+3. **Iniciar la aplicación**
 
    Para iniciar la aplicación, ejecuta:
 
@@ -22,7 +25,7 @@ Esta es un prototipo de streaming de películas desarrollada con React Native y 
    npx expo start
    ```
 
-   En la salida, encontrarás opciones para abrir la aplicación en un emulador de Android, simulador de iOS o en un navegador web.
+   En la salida, encontrarás opciones para abrir la aplicación en un emulador de Android, simulador de iOS o en un navegador web, proporcionadas por ExpoGo.
 
 ## Documentación de decisiones arquitectónicas
 
