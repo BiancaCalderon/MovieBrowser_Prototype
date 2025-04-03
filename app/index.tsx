@@ -8,22 +8,6 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import { fetchMovieData, getFeaturedMovie, getContainers } from '../services/movieService';
 import { MovieData, Container } from '../types/movie.types';
 
-interface Classification {
-  rating: string;
-  advisoryContent: string[];
-}
-
-interface Cast {
-  characterName: string;
-  actorName: string;
-}
-
-interface Crew {
-  directors: string[];
-  producers: string[];
-  writers: string[];
-}
-
 export default function HomeScreen() {
   const [featuredMovie, setFeaturedMovie] = useState<MovieData | null>(null);
   const [containers, setContainers] = useState<Container[]>([]);
@@ -96,7 +80,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
   mobileContainer: {
-    maxWidth: 480, // Ancho típico de un dispositivo móvil
+    maxWidth: 480, //para móvil
     width: '100%',
     alignSelf: 'center',
     flex: 1,
